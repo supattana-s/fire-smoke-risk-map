@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FrontZone from "./zones/FrontZone";
+import LeftZone from "./zones/LeftZone";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="d-flex vh-100 bg-light">
+            <LeftZone />
+            <div className="w-70 d-flex flex-column justify-content-between">
+                <div className="h-50 bg-danger">AC Performance zone</div>
+                <FrontZone />
+            </div>
+        </div>
+    );
 }
 
 export default App;

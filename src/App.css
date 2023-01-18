@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+p {
+    margin: 0px 0px 0px 0px;
+    word-wrap: break-word;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-format {
+    font-size: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-rotate {
+    transform: rotate(-90deg);
+}
+.w-30 {
+    width: 30%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.w-70 {
+    width: 70%;
 }
 
-.App-link {
-  color: #61dafb;
+.w-40px {
+    width: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h-30px {
+    height: 30px;
+}
+
+.h-10vh {
+    height: 10vh;
+}
+
+.h-15vh {
+    height: 15vh;
+}
+
+.h-60vh {
+    height: 60vh;
+}
+
+.plug {
+    width: 20px;
+    height: 20px;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+    /* z-index: 50; */
+}
+
+/************************** ShelfZone Css ******************************/
+
+.shelf {
+    width: 100%;
+    height: 5vh;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.working-table-3 {
+    height: 10vh;
+    width: 30px;
+    /* transform: rotate(-90deg); */
+    font-size: 7px;
+    margin: 0px 0px 0px 2px;
+    position: relative;
+    top: 80%;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+/************************** ComputorZone Css ******************************/
+
+.center-component {
+    height: 65vh;
+}
+
+.bottom-component {
+    height: 10vh;
+}
+
+.working-table-position-computer-zone {
+    position: relative;
+    top: 15vh;
+}
+
+.sample-placement-area-position {
+    position: relative;
+    top: 25vh;
+}
+
+.workbench-position {
+    position: relative;
+    left: 3vh;
+    top: 8vh;
+}
+
+.cabinet-position {
+    position: relative;
+    left: 3vh;
+    top: 8vh;
+}
+
+.small-cabinet {
+    height: 5vh;
+    width: 40px;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.computer-desk {
+    height: 10vh;
+    width: 50px;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+    /* display: flex; */
+}
+
+.working-table {
+    height: 30vh;
+    width: 8vw;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.working-table-text-box {
+    width: 10rem;
+    height: 2rem;
+    position: relative;
+    top: 70px;
+    right: 30px;
+}
+
+.sample-placement-area {
+    height: 30vh;
+    width: 13vw;
+    /* font-size: 7px; */
+    /* position: relative; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.sample-placement-area-text-box {
+    width: 12rem;
+    height: 2rem;
+    /* position: relative; */
+    top: 100px;
+    right: 40px;
+}
+
+.workbench {
+    height: 7vh;
+    width: 20vw;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+    /* margin: 0px 0px 0px 10px; */
+    /* display: flex; */
+}
+
+.cabinet {
+    height: 7vh;
+    width: 8vw;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+    /* display: flex; */
+    /* z-index: 50; */
+}
+
+.electrical-stand {
+    height: 10vh;
+    width: 50px;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.white-board {
+    height: 10vh;
+    width: 50px;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
 }
