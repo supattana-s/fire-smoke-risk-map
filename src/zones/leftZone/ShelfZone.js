@@ -1,5 +1,5 @@
-import WorkingTable from "../component/WorkingTable";
-import Shelf from "../component/Shelf";
+import WorkingTable from "../../component/WorkingTable";
+import Shelf from "../../component/Shelf";
 
 function ShelfZone() {
     return (
@@ -12,7 +12,7 @@ function ShelfZone() {
                         <Shelf />
                     </div>
                 </div>
-                <div className="w-50 h-100  ">
+                <div className="d-flex w-50 h-100 working-table-3-position">
                     <WorkingTable tableNo="3" />
                 </div>
             </div>

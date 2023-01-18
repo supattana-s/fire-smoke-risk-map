@@ -10,12 +10,32 @@ p {
 .text-rotate {
     transform: rotate(-90deg);
 }
+
+.w-5 {
+    width: 5%;
+}
+
+.w-95 {
+    width: 95%;
+}
+
 .w-30 {
     width: 30%;
 }
 
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
 .w-70 {
     width: 70%;
+}
+.w-80 {
+    width: 80%;
 }
 
 .w-40px {
@@ -62,11 +82,13 @@ p {
     width: 30px;
     /* transform: rotate(-90deg); */
     font-size: 7px;
-    margin: 0px 0px 0px 2px;
-    position: relative;
-    top: 80%;
     border: 2px solid #2b7a0b;
     border-radius: 2px;
+}
+
+.working-table-3-position {
+    position: relative;
+    top: 15vh;
 }
 
 /************************** ComputorZone Css ******************************/
@@ -77,28 +99,6 @@ p {
 
 .bottom-component {
     height: 10vh;
-}
-
-.working-table-position-computer-zone {
-    position: relative;
-    top: 15vh;
-}
-
-.sample-placement-area-position {
-    position: relative;
-    top: 25vh;
-}
-
-.workbench-position {
-    position: relative;
-    left: 3vh;
-    top: 8vh;
-}
-
-.cabinet-position {
-    position: relative;
-    left: 3vh;
-    top: 8vh;
 }
 
 .small-cabinet {
@@ -118,7 +118,7 @@ p {
     /* display: flex; */
 }
 
-.working-table {
+.working-table-2 {
     height: 30vh;
     width: 8vw;
     /* font-size: 7px; */
@@ -162,7 +162,7 @@ p {
 }
 
 .cabinet {
-    height: 7vh;
+    height: 6vh;
     width: 8vw;
     /* font-size: 7px; */
     border: 2px solid #2b7a0b;
@@ -183,4 +183,212 @@ p {
     width: 50px;
     border: 2px solid #2b7a0b;
     border-radius: 2px;
+}
+
+/**** Left zone Css: position ****/
+.plug-computer-zone {
+    position: relative;
+    top: 2vh;
+}
+
+.plug-working-table-2-1 {
+    position: relative;
+    top: 5vh;
+    z-index: 100;
+}
+.plug-working-table-2-2 {
+    position: relative;
+    top: 17vh;
+    z-index: 100;
+}
+
+.plug-workbench-1 {
+    position: relative;
+    top: 11vh;
+    left: 0vh;
+    z-index: 100;
+}
+.plug-workbench-2 {
+    position: relative;
+    top: 3vh;
+    left: 2vh;
+    z-index: 100;
+}
+
+.working-table-position-computer-zone {
+    position: relative;
+    top: 8vh;
+}
+
+.sample-placement-area-position {
+    position: relative;
+    top: 25vh;
+}
+
+.workbench-position {
+    position: relative;
+    left: 0vh;
+    top: 8vh;
+}
+
+.cabinet-position {
+    position: relative;
+    left: 0vh;
+    top: 9vh;
+}
+/**********************************/
+
+/************************** Front Zone Css ******************************/
+.left-size {
+    width: 20vw;
+}
+
+.center-top-size {
+    width: 27vw;
+    height: 80vh;
+}
+
+.center-bottom-size {
+    width: 27vw;
+    height: 20vh;
+}
+
+.cabinet-front-zone-right {
+    height: 8vh;
+    width: 5vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.partition {
+    height: 35vh;
+    width: 1vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.acbench-controller {
+    height: 5vh;
+    width: 13vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.compressor-controller {
+    height: 8vh;
+    width: 13vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.sa-bench {
+    height: 10vh;
+    width: 10vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.working-table {
+    height: 10vh;
+    width: 25vw;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.refrigerant-charger {
+    height: 10vh;
+    width: 7vw;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.ac-main-power {
+    height: 9vh;
+    width: 3vw;
+    /* font-size: 7px; */
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+/**** Front Zone Css: position ****/
+
+.cabinet-front-zone-position {
+    position: relative;
+    top: 4vh;
+}
+
+.cabinet-right-front-zone-position {
+    position: relative;
+    top: 8vh;
+    right: -10vw;
+}
+
+.refrigerant-charger-position {
+    position: relative;
+    top: 4vh;
+    left: 8vw;
+}
+
+.ac-main-power-position {
+    position: relative;
+    top: 10vh;
+    left: 12vw;
+}
+
+.compressor-controller-position {
+    position: relative;
+    top: 1vh;
+    left: 8vw;
+}
+
+.sa-bench-position {
+    position: relative;
+    top: 3vh;
+    left: 6vw;
+}
+
+.working-table-right-front-zone-position {
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+}
+
+/*****************************/
+
+/************************** Back Zone Css ******************************/
+
+.ac-bench {
+    height: 38vh;
+    width: 100vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.air-compressor {
+    height: 5vh;
+    width: 10vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+.ac-behind-power {
+    height: 7vh;
+    width: 3vw;
+    border: 2px solid #2b7a0b;
+    border-radius: 2px;
+}
+
+/**** Back Zone Css: position ****/
+
+.air-compressor-position {
+    position: relative;
+    left: 10vw;
+}
+
+.ac-behind-power-position {
+    position: relative;
+    top: 2vh;
+    right: -12vw;
 }
