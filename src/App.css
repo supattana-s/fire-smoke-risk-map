@@ -3,6 +3,21 @@ p {
     word-wrap: break-word;
 }
 
+.status-box {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid blue;
+    border-radius: 2px;
+}
+
+.status-color-ok {
+    background-color: green;
+}
+
+.status-color-ng {
+    background-color: red;
+}
+
 .text-format {
     font-size: 7px;
 }
@@ -212,6 +227,13 @@ p {
     position: relative;
     top: 3vh;
     left: 2vh;
+    z-index: 100;
+}
+
+.plug-sample-placement {
+    position: relative;
+    top: 16vh;
+    left: 10vw;
     z-index: 100;
 }
 

@@ -10,7 +10,7 @@ function WorkBenchZone() {
             <div className="d-flex flex-row">
                 <div className="d-flex flex-row">
                     <div className="plug-workbench-1">
-                        <Plug openModal={() => handleOpenModal("plug")} />
+                        <Plug openModal={() => handleOpenModal("4")} />
                     </div>
                 </div>
                 <div className="workbench-position">
@@ -20,7 +20,7 @@ function WorkBenchZone() {
                     <Cabinet />
                     <Cabinet />
                     <div className="plug-workbench-2">
-                        <Plug />
+                        <Plug openModal={() => handleOpenModal("6")} />
                     </div>
                 </div>
             </div>

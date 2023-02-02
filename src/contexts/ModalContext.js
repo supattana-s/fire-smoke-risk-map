@@ -1,5 +1,7 @@
 import { createContext, useContext, useState } from "react";
-import ElectricCheckList from "../component/checklist/ElectricCheckList";
+
+import * as statusService from "../api/statusApi";
+import ChecklistList from "../component/checklist/ChecklistList";
 
 const ModalContext = createContext();
 
@@ -8,13 +10,15 @@ function ModalContextProvider({ children }) {
     const [title, setTitle] = useState("");
     const [component, setComponent] = useState(null);
 
-    const handleOpenModal = (input) => {
-        setTitle(input);
-        setIsOpen(true);
-    };
-
-    const handleElectricCheckList = () => {
-        setComponent(ElectricCheckList);
+    const handleOpenModal = async (checkpointsId) => {
+        try {
+            const res = await statusService.getAllStatus(checkpointsId);
+            setTitle(res.data[0].Checkpoint.name);
+            setComponent(<ChecklistList statuses={res.data} />);
+            setIsOpen(true);
+        } catch (err) {
+            console.log(err.message);
+        }
     };
 
     return (
@@ -27,7 +31,6 @@ function ModalContextProvider({ children }) {
                 handleOpenModal,
                 component,
                 setComponent,
-                handleElectricCheckList,
             }}
         >
             {children}
