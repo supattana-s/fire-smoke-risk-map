@@ -57,6 +57,10 @@ p {
     width: 40px;
 }
 
+.h-7vh {
+    height: 7vh;
+}
+
 .h-30px {
     height: 30px;
 }
@@ -290,7 +294,7 @@ p {
 }
 
 .acbench-controller {
-    height: 5vh;
+    height: 7vh;
     width: 13vw;
     border: 2px solid #2b7a0b;
     border-radius: 2px;
@@ -298,7 +302,7 @@ p {
 
 .compressor-controller {
     height: 8vh;
-    width: 13vw;
+    width: 11vw;
     border: 2px solid #2b7a0b;
     border-radius: 2px;
 }
@@ -328,13 +332,56 @@ p {
 
 .ac-main-power {
     height: 9vh;
-    width: 3vw;
+    width: 4vw;
     /* font-size: 7px; */
     border: 2px solid #2b7a0b;
     border-radius: 2px;
 }
 
 /**** Front Zone Css: position ****/
+
+.plug-ac-bench-controller {
+    z-index: 100;
+    position: relative;
+    left: 35%;
+    top: 25%;
+}
+
+.plug-table-ac-bench-controller {
+    z-index: 100;
+    position: relative;
+    left: 13%;
+    top: 43%;
+}
+
+.plug-r134a-position {
+    z-index: 100;
+    position: relative;
+    left: 32%;
+}
+
+.plug-right-position {
+    z-index: 100;
+    position: relative;
+    left: 83%;
+    top: 5%;
+}
+
+.breaker-ac-main-power {
+    position: relative;
+    top: 12.5vh;
+    left: 12.3vw;
+}
+
+.ac-bench-controller-position {
+    position: relative;
+    top: -2.5vh;
+}
+
+.table-ac-bench-controller {
+    position: relative;
+    top: -2.5vh;
+}
 
 .cabinet-front-zone-position {
     position: relative;
@@ -355,8 +402,8 @@ p {
 
 .ac-main-power-position {
     position: relative;
-    top: 10vh;
-    left: 12vw;
+    top: 7vh;
+    left: 11vw;
 }
 
 .compressor-controller-position {
