@@ -30,6 +30,10 @@ p {
     width: 5%;
 }
 
+.w-10 {
+    width: 10%;
+}
+
 .w-95 {
     width: 95%;
 }
@@ -237,7 +241,7 @@ p {
 .plug-sample-placement {
     position: relative;
     top: 16vh;
-    left: 10vw;
+    left: 9.5vw;
     z-index: 100;
 }
 
@@ -430,7 +434,7 @@ p {
 
 .ac-bench {
     height: 38vh;
-    width: 100vw;
+    width: 60vw;
     border: 2px solid #2b7a0b;
     border-radius: 2px;
 }
@@ -444,7 +448,7 @@ p {
 
 .ac-behind-power {
     height: 7vh;
-    width: 3vw;
+    width: 5vw;
     border: 2px solid #2b7a0b;
     border-radius: 2px;
 }
@@ -453,11 +457,23 @@ p {
 
 .air-compressor-position {
     position: relative;
-    left: 10vw;
+    left: 7vw;
 }
 
 .ac-behind-power-position {
     position: relative;
-    top: 2vh;
-    right: -12vw;
+    top: 1vh;
+    left: 12vw;
+}
+
+.plug-behind-ac-bench {
+    position: relative;
+    left: 5%;
+}
+
+.breaker-ac-bench-behind {
+    z-index: 100;
+    position: relative;
+    top: 45%;
+    left: 77%;
 }
