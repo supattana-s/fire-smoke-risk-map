@@ -34,7 +34,7 @@ function ModalContextProvider({ children }) {
 
     const handleOpenModal = async (checkpointsId) => {
         try {
-            const res = await statusService.getAllStatus(checkpointsId);
+            const res = await statusService.getAllStatusById(checkpointsId);
             setTitle(res.data[0].Checkpoint.name);
             setComponent(<ChecklistList />);
             setStatuses(res.data);
