@@ -1,5 +1,13 @@
 import axios from "../config/axios";
 
+export const getAllStatus = async () => {
+    try {
+        return await axios.get("/status");
+    } catch (err) {
+        console.log(err);
+    }
+};
+
 export const getAllStatusById = async (checkpointsId) => {
     try {
         return await axios.get(`/status/${checkpointsId}`);

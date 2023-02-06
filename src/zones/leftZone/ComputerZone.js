@@ -19,6 +19,7 @@ function ComputerZone() {
                             openModal={() => {
                                 handleOpenModal("1");
                             }}
+                            checkpointsId="1"
                         />
                     </div>
                 </div>
@@ -32,17 +33,26 @@ function ComputerZone() {
             <div className="working-table-position-computer-zone">
                 <div className="">
                     <div className="plug-working-table-2-1">
-                        <Plug openModal={() => handleOpenModal("2")} />
+                        <Plug
+                            openModal={() => handleOpenModal("2")}
+                            checkpointsId="2"
+                        />
                     </div>
                     <div className="plug-working-table-2-2">
-                        <Plug openModal={() => handleOpenModal("3")} />
+                        <Plug
+                            openModal={() => handleOpenModal("3")}
+                            checkpointsId="3"
+                        />
                     </div>
                 </div>
                 <WorkingTable tableNo="2" />
             </div>
             <div className="">
                 <div className="plug-sample-placement">
-                    <Plug openModal={() => handleOpenModal("5")} />
+                    <Plug
+                        openModal={() => handleOpenModal("5")}
+                        checkpointsId="5"
+                    />
                 </div>
                 <div className="sample-placement-area-position">
                     <SamplePlacementArea />

@@ -15,9 +15,18 @@ function CenterTop() {
                     <CompressorController />
                 </div>
                 <div className="d-flex plug-r134a-position">
-                    <Plug openModal={() => handleOpenModal("11")} />
-                    <R134a openModal={() => handleOpenModal("15")} />
-                    <Plug openModal={() => handleOpenModal("12")} />
+                    <Plug
+                        openModal={() => handleOpenModal("11")}
+                        checkpointsId="11"
+                    />
+                    <R134a
+                        openModal={() => handleOpenModal("15")}
+                        checkpointsId="15"
+                    />
+                    <Plug
+                        openModal={() => handleOpenModal("12")}
+                        checkpointsId="12"
+                    />
                 </div>
             </div>
             <div className="sa-bench-position">

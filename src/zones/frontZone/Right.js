@@ -11,7 +11,10 @@ function Right() {
         <div className="d-flex right-size w-25">
             <div className="d-flex flex-column w-100">
                 <div className="plug-right-position">
-                    <Plug openModal={() => handleOpenModal("13")} />
+                    <Plug
+                        openModal={() => handleOpenModal("13")}
+                        checkpointsId="13"
+                    />
                 </div>
                 <div className="refrigerant-charger-position">
                     <RefrigerantCharger />
@@ -22,7 +25,10 @@ function Right() {
                 </div>
                 <div className="">
                     <div className="breaker-ac-main-power">
-                        <Plug openModal={() => handleOpenModal("14")} />
+                        <Plug
+                            openModal={() => handleOpenModal("14")}
+                            checkpointsId="14"
+                        />
                     </div>
 
                     <div className="ac-main-power-position">

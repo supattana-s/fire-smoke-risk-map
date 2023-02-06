@@ -10,7 +10,10 @@ function BehindACBench() {
     return (
         <div className="d-flex flex-row w-100">
             <div className="plug-behind-ac-bench">
-                <Plug openModal={() => handleOpenModal("7")} />
+                <Plug
+                    openModal={() => handleOpenModal("7")}
+                    checkpointsId="7"
+                />
             </div>
             <div className="d-flex flex-row air-compressor-position w-70">
                 <AirCompressor />
@@ -20,7 +23,10 @@ function BehindACBench() {
             </div>
             <div className="w-30">
                 <div className="breaker-ac-bench-behind">
-                    <Plug openModal={() => handleOpenModal("10")} />
+                    <Plug
+                        openModal={() => handleOpenModal("10")}
+                        checkpointsId="10"
+                    />
                 </div>
                 <div className="ac-behind-power-position w-10">
                     <ACMainPower behindAcBench={true} />

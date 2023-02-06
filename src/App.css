@@ -388,6 +388,7 @@ p {
 }
 
 .breaker-ac-main-power {
+    z-index: 100;
     position: relative;
     top: 12.5vh;
     left: 12.3vw;

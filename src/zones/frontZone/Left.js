@@ -16,7 +16,10 @@ function Left() {
             <div className="w-95">
                 <div className="h-7vh">
                     <div className="plug-ac-bench-controller">
-                        <Plug openModal={() => handleOpenModal("8")} />
+                        <Plug
+                            openModal={() => handleOpenModal("8")}
+                            checkpointsId="8"
+                        />
                     </div>
                     <div className="ac-bench-controller-position">
                         <ACBenchController />
@@ -24,7 +27,10 @@ function Left() {
                 </div>
                 <div className="h-7vh">
                     <div className="plug-table-ac-bench-controller">
-                        <Plug openModal={() => handleOpenModal("9")} />
+                        <Plug
+                            openModal={() => handleOpenModal("9")}
+                            checkpointsId="9"
+                        />
                     </div>
                     <div className="table-ac-bench-controller">
                         <ComputerDesk />

@@ -5,17 +5,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import ModalContextProvider from "./contexts/ModalContext";
-import showColorContextProvider from "./contexts/showColorContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     // <React.StrictMode>
     <ModalContextProvider>
-        <showColorContextProvider>
-            <App />
-        </showColorContextProvider>
+        <App />
     </ModalContextProvider>
-    //* </React.StrictMode> */}
+    // {/* </React.StrictMode> */}
 );
 
 // If you want to start measuring performance in your app, pass a function

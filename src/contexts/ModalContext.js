@@ -12,6 +12,7 @@ function ModalContextProvider({ children }) {
     const [statuses, setStatuses] = useState([]);
     const [statusTracker, setStatusTracker] = useState([]);
     const [originalStatus, setOriginalStatus] = useState([]);
+    const [checkColor, setCheckColor] = useState(false);
 
     const isSame = (statusTracker, originalStatus) => {
         for (let i = 0; i <= statusTracker.length; i++) {
@@ -51,6 +52,7 @@ function ModalContextProvider({ children }) {
         setStatusTracker([]);
         setOriginalStatus([]);
         setStatuses([]);
+        setCheckColor((prev) => !prev);
     };
 
     const handleClickSave = async () => {
@@ -63,8 +65,6 @@ function ModalContextProvider({ children }) {
                 value: statusTracker[item],
             });
         });
-
-        console.log(payload);
 
         await statusService.updateStatus(payload);
 
@@ -88,6 +88,8 @@ function ModalContextProvider({ children }) {
                 isSame,
                 handleClickSave,
                 statuses,
+                checkColor,
+                setCheckColor,
             }}
         >
             {children}
