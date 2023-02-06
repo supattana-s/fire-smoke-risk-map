@@ -6,8 +6,7 @@ import Modal from "../component/ui/Modal";
 import { useModal } from "../contexts/ModalContext";
 
 function MainPage() {
-    const { isOpen, setIsOpen, title, setTitle, component, setComponent } =
-        useModal();
+    const { isOpen, setIsOpen, title, component, handleOnClose } = useModal();
 
     return (
         <div className="d-flex vh-100 bg-light">
@@ -18,15 +17,7 @@ function MainPage() {
                 <BackZone />
                 <FrontZone />
             </div>
-            <Modal
-                open={isOpen}
-                onClose={() => {
-                    setIsOpen(false);
-                    setTitle("");
-                    setComponent(null);
-                }}
-                title={title}
-            >
+            <Modal open={isOpen} onClose={handleOnClose} title={title}>
                 {component}
             </Modal>
         </div>

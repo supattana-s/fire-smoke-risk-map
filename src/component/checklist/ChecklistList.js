@@ -1,38 +1,41 @@
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { useModal } from "../../contexts/ModalContext";
 import Checklist from "./Checklist";
 
-function ChecklistList({ statuses }) {
-    const [statusTracker, setStatusTracker] = useState([]);
-    const [originalStatus, setOriginalStatus] = useState([]);
+function ChecklistList() {
     const [showSaveBox, setShowSaveBox] = useState(false);
 
+    const {
+        statusTracker,
+        originalStatus,
+        isSame,
+        setStatusTracker,
+        handleClickSave,
+        statuses,
+    } = useModal();
+
+    const checkIsSame = useCallback(
+        () => isSame(statusTracker, originalStatus),
+        [isSame, statusTracker, originalStatus]
+    );
+
     const initialRender = useRef(true);
-
-    const isSame = () => {
-        for (let i = 0; i <= statusTracker.length; i++) {
-            if (statusTracker[i] !== originalStatus[i]) {
-                return false;
-            }
-        }
-        return true;
-    };
-
     useEffect(() => {
         if (initialRender.current) {
             initialRender.current = false;
-            statuses.map((item) => {
+            statuses.forEach((item) => {
                 statusTracker.push(item.status);
                 originalStatus.push(item.status);
             });
             setShowSaveBox(false);
         } else {
-            if (!isSame()) {
+            if (!checkIsSame()) {
                 setShowSaveBox(true);
             } else {
                 setShowSaveBox(false);
             }
         }
-    }, [statusTracker]);
+    }, [statusTracker, originalStatus, statuses, checkIsSame]);
 
     return (
         <div>
@@ -41,6 +44,7 @@ function ChecklistList({ statuses }) {
                 className={`btn btn-primary save-box ${
                     showSaveBox ? "d-block" : "d-none"
                 }`}
+                onClick={handleClickSave}
             >
                 Save
             </button>
