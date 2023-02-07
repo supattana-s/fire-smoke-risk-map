@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState, useRef } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useModal } from "../contexts/ModalContext";
 import * as statusApi from "../api/statusApi";
 
@@ -21,12 +21,11 @@ function R134a({ openModal, checkpointsId }) {
 
             setIsOk(true);
         }
-    }, []);
+    }, [checkpointsId]);
 
     useEffect(() => {
         fetchAllStatuses();
-        console.log("1");
-    }, [checkColor]);
+    }, [checkColor, fetchAllStatuses]);
 
     return (
         <div
