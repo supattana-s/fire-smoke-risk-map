@@ -4,7 +4,7 @@ import Shelf from "../../component/Shelf";
 function ShelfZone() {
     return (
         <>
-            <div id="shelfZone" className="d-flex h-25">
+            <div id="shelfZone" className="d-flex w-100 h-25">
                 <div className="d-flex flex-column w-50 h-100 justify-content-between">
                     <Shelf />
                     <div>

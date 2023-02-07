@@ -10,9 +10,9 @@ function ComputerZone() {
     const { handleOpenModal } = useModal();
 
     return (
-        <div className="d-flex h-60vh flex-row justify-content-between">
-            <div className="d-flex flex-column justify-content-between">
-                <div>
+        <div className="d-flex h-60vh w-100 flex-row justify-content-between">
+            <div className="d-flex w-20 flex-column justify-content-between">
+                <div className="w-100 h-25">
                     <ComputerDesk />
                     <div className="plug-computer-zone">
                         <Plug
@@ -23,14 +23,14 @@ function ComputerZone() {
                         />
                     </div>
                 </div>
-                <div className="">
+                <div className="w-100 h-50">
                     <ComputerDesk />
                     <ComputerDesk />
                     <ElectricalStand />
                     <WhiteBoard />
                 </div>
             </div>
-            <div className="working-table-position-computer-zone">
+            <div className="w-25 working-table-position-computer-zone">
                 <div className="">
                     <div className="plug-working-table-2-1">
                         <Plug
@@ -47,14 +47,14 @@ function ComputerZone() {
                 </div>
                 <WorkingTable tableNo="2" />
             </div>
-            <div className="">
+            <div className="w-25 h-50">
                 <div className="plug-sample-placement">
                     <Plug
                         openModal={() => handleOpenModal("5")}
                         checkpointsId="5"
                     />
                 </div>
-                <div className="sample-placement-area-position">
+                <div className="sample-placement-area-position w-100 h-100">
                     <SamplePlacementArea />
                 </div>
             </div>
