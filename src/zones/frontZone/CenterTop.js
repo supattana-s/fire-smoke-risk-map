@@ -9,12 +9,12 @@ function CenterTop() {
     const { handleOpenModal } = useModal();
 
     return (
-        <div className="d-flex flex-column center-top-size">
-            <div className="d-flex">
-                <div className="compressor-controller-position">
+        <div className="d-flex flex-column w-100 h-75">
+            <div className="d-flex w-100 h-25">
+                <div className="w-75 h-100 compressor-controller-position">
                     <CompressorController />
                 </div>
-                <div className="d-flex plug-r134a-position">
+                <div className="w-25 h-100 d-flex plug-r134a-position">
                     <Plug
                         openModal={() => handleOpenModal("11")}
                         checkpointsId="11"
@@ -29,11 +29,15 @@ function CenterTop() {
                     />
                 </div>
             </div>
-            <div className="sa-bench-position">
-                <SABench />
+            <div className="w-100 h-25 ">
+                <div className="w-100 h-100 sa-bench-position">
+                    <SABench />
+                </div>
             </div>
-            <div className="working-table-right-front-zone-position">
-                <WorkingTable />
+            <div className="w-100 h-25 ">
+                <div className="w-100 h-100 working-table-right-front-zone-position">
+                    <WorkingTable />
+                </div>
             </div>
         </div>
     );

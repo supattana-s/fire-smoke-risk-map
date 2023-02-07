@@ -7,7 +7,7 @@ function FrontZone() {
     return (
         <div className="d-flex h-50 w-100">
             <Left />
-            <div className="d-flex flex-column w-50">
+            <div className="d-flex flex-column w-50 h-100">
                 <CenterTop />
                 <CenterBottom />
             </div>

@@ -25,14 +25,14 @@ function Left() {
                         <ACBenchController />
                     </div>
                 </div>
-                <div className="h-7vh">
+                <div className="h-50">
                     <div className="plug-table-ac-bench-controller">
                         <Plug
                             openModal={() => handleOpenModal("9")}
                             checkpointsId="9"
                         />
                     </div>
-                    <div className="table-ac-bench-controller">
+                    <div className="table-ac-bench-controller w-50 h-100">
                         <ComputerDesk />
                     </div>
                 </div>

@@ -12,7 +12,7 @@ function ComputerZone() {
     return (
         <div className="d-flex h-60vh w-100 flex-row justify-content-between">
             <div className="d-flex w-20 flex-column justify-content-between">
-                <div className="w-100 h-25">
+                <div className="w-100 h-50">
                     <ComputerDesk />
                     <div className="plug-computer-zone">
                         <Plug
